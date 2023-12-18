@@ -1,9 +1,6 @@
-import os
-from flask import Flask, request, jsonify, Response, send_from_directory
+from flask import Flask, request, jsonify
 from flask_swagger_ui import get_swaggerui_blueprint
-from datetime import datetime, timedelta
-from pydantic import BaseModel, field_validator
-from db import init_db, query_db
+from api.db import init_db, query_db
 
 date_format = "%Y-%m-%d %H:%M:%S"
 
